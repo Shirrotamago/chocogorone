@@ -131,6 +131,50 @@ display: block;
 }
 
 /*-------------------------------------------
+about
+-------------------------------------------*/
+.site-about {
+	width: 100%;
+	height: 800px;
+	padding: 0 80px;
+	background-color: #E54328;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image:
+	url("/img/About_decoration.png"),
+  repeating-linear-gradient(
+    90deg,
+    rgba(0,128,128,0.5) ,
+    rgba(0,128,128,0.5) 1px,
+    transparent 1px,
+    transparent 12px
+  ),
+  repeating-linear-gradient(
+    0deg,
+    rgba(0,128,128,0.5) ,
+    rgba(0,128,128,0.5) 1px,
+    #E54328 1px,
+    #E54328 12px
+  );
+	background-position: center;
+}
+
+.site-about_title {
+	font-size: 53px;
+	margin-top: 121px;
+	color: #008080;
+}
+
+.site-about_text {
+	margin-top: 136px;
+	color: #000;
+	font-size: 28px;
+}
+
+
+
+/*-------------------------------------------
 Information
 -------------------------------------------*/
 #information {
