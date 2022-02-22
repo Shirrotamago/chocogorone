@@ -5,7 +5,7 @@ html {
 }
 body {
   color: #050507;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Kiwi Maru', 'Klee One', serif, cursive;
   font-weight: 300;
 }
 a {
@@ -80,6 +80,16 @@ background-image: url("../img/subtit_light.png");
 background-image: url("../img/subtit_dark.png");
 }
 
+<<<<<<< HEAD
+=======
+#mainvisual .hamburger {
+position: absolute;
+right: 80px;
+top: 40px;
+}
+
+
+>>>>>>> shirota
 #mainvisual .slider {
   max-width: 410;
 	margin: 0 auto;
