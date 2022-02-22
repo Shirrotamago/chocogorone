@@ -338,7 +338,6 @@ Access
 .site-access {
 	width: 100%;
 	height: 800px;
-	padding: 0 80px;
 	background-color: #E54328;
 	background-image:
 	url("../img/Access_decoration.png"),
@@ -388,13 +387,23 @@ Access
 	gap: 0 18px;
 }
 
+.dot {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background:
+url("../img/dot.png") left bottom / 80px auto repeat-x;
+	top: 127px;
+}
+
 /*-------------------------------------------
 Contact
 -------------------------------------------*/
 
+
 .site-contact {
   width: 100%;
-	height: 800px;
+	height: 720px;
 	background-image:radial-gradient(#e54328 4%, transparent 4%), radial-gradient(#e54328 4%, transparent 4%);
 	background-size: 16px 16px;
 	background-repeat: repeat;
@@ -429,8 +438,21 @@ Contact
 	color: #E54328;
 }
 
+.site-contact_btn:hover {
+	background-color: #E54328;
+	color: #000;
+}
+
+footer {
+	width: 100%;
+	height: 80px;
+	background-image:radial-gradient(#e54328 4%, transparent 4%), radial-gradient(#e54328 4%, transparent 4%);
+	background-size: 16px 16px;
+	background-repeat: repeat;
+	background-position: 0 0 ,8px 8px;
+}
+
 .copy {
-	margin-top: 148px;
 	color: #E54328;
 }
 /*
