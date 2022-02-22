@@ -434,3 +434,13 @@ Button Arrow
 #contact .btn:hover::after {
   right: -50px;
 }
+
+
+/* pagetop */
+#pagetop{
+    position:fixed;
+    right:10px;
+    bottom:0px;
+    cursor:pointer;
+    z-index: 10;
+}
