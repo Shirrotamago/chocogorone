@@ -338,7 +338,6 @@ Access
 .site-access {
 	width: 100%;
 	height: 800px;
-	padding: 0 80px;
 	background-color: #E54328;
 	background-image:
 	url("../img/Access_decoration.png"),
@@ -388,9 +387,19 @@ Access
 	gap: 0 18px;
 }
 
+.dot {
+	width: 100%;
+	height: 100px;
+	position: relative;
+	background:
+url("../img/dot.png") left bottom / 80px auto repeat-x;
+	top: 127px;
+}
+
 /*-------------------------------------------
 Contact
 -------------------------------------------*/
+
 
 .site-contact {
   width: 100%;
