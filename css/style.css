@@ -467,8 +467,8 @@ Button Arrow
 /* pagetop */
 #pagetop{
     position:fixed;
-    right:10px;
-    bottom:0px;
+    right:40px;
+    bottom:40px;
     cursor:pointer;
     z-index: 10;
 }
