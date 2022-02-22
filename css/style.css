@@ -5,7 +5,7 @@ html {
 }
 body {
   color: #050507;
-  font-family: 'Kiwi Maru', 'Klee One', serif, cursive;
+  font-family: 'Klee One', cursive;
   font-weight: 300;
 }
 a {
@@ -18,6 +18,10 @@ img {
 }
 li {
   list-style: none;
+}
+
+h2 {
+font-family: 'Kiwi Maru', serif;
 }
 
 .site-title {
@@ -51,8 +55,22 @@ Mainvisual
 
 #mainvisual {
 background:
-white url("../img/main_bacground.png") left top/ 100% 100% repeat;
-/*url("../img/grass_deco.svg") left bottom / 80px auto repeat-x;*/
+url("../img/grass_deco.svg") left bottom / 80px auto repeat-x,
+
+  repeating-linear-gradient(
+    90deg,
+    #33cccc ,
+    transparent 1px,
+    transparent 12px
+  ),
+  repeating-linear-gradient(
+    0deg,
+    #33cccc ,
+    #fff 1px,
+    #fff 12px
+  );
+	
+	
 height: 100vh;
 position: relative;
 }
@@ -89,9 +107,10 @@ top: 40px;
 
 
 #mainvisual .slider {
+bottom: 0;
   max-width: 410;
 	margin: 0 auto;
-	padding-top: 80px;
+	padding-top: 40px;
 }
 
 #mainvisual .slider li img {
@@ -142,7 +161,8 @@ about
 	flex-direction: column;
 	align-items: center;
 	background-image:
-	url("/img/About_decoration.png"),
+	url("../img/About_decoration.png"),
+/*	url("/img/About_decoration.png"),*/
   repeating-linear-gradient(
     90deg,
     rgba(0,128,128,0.5) ,
@@ -195,25 +215,6 @@ Information
 }
 #information .info-date-ja {
   font-size: 1.125rem;
-}
-
-/*-------------------------------------------
-Gallery
--------------------------------------------*/
-#gallery {
-  margin-bottom: 480px;
-}
-#gallery .list li {
-  margin-bottom: 60px;
-}
-#gallery .list li img {
-  width: 48%;
-}
-#gallery .list li:nth-child(odd) {
-  text-align: left;
-}
-#gallery .list li:nth-child(even) {
-  text-align: right;
 }
 
 /*-------------------------------------------
