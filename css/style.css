@@ -250,7 +250,6 @@ about
 	background-color: #E54328;
 	background-image:
 	url("../img/About_decoration.png"),
-/*	url("/img/About_decoration.png"),*/
   repeating-linear-gradient(
     90deg,
     rgba(0,128,128,0.5) ,
@@ -336,31 +335,57 @@ Information
 /*-------------------------------------------
 Access
 -------------------------------------------*/
-#access {
-  margin-bottom: 480px;
-  position: relative;
-  z-index: 20;
+.site-access {
+	width: 100%;
+	height: 800px;
+	padding: 0 80px;
+	background-color: #E54328;
+	background-image:
+	url("../img/Access_decoration.png"),
+  repeating-linear-gradient(
+    90deg,
+    rgba(0,128,128,0.5) ,
+    rgba(0,128,128,0.5) 1px,
+    transparent 1px,
+    transparent 12px
+  ),
+  repeating-linear-gradient(
+    0deg,
+    rgba(0,128,128,0.5) ,
+    rgba(0,128,128,0.5) 1px,
+    #E54328 1px,
+    #E54328 12px
+  );
+	background-position: center;
 }
-#access .place {
-  font-size: 1.75rem;
-  font-weight: 400;
-  margin-bottom: 20px;
+
+.site-access_title {
+	font-size: 53px;
+	padding-top: 91px;
+	color: #008080;
 }
-#access .address {
-  margin-bottom: 20px;
+
+.site-access_map {
+	margin-top: 52px;
+	opacity: 0.9;
 }
-#access .contact {
-  margin-bottom: 30px;
+
+.site-access_sub-title {
+	margin-top: 4px;
+	color: #000;
+	font-size: 20px;
 }
-#access .btn {
-  border: solid 1px #fff;
-  color: #fff;
-  display: inline-block;
-  padding: 15px 82px;
-  transition: 0.3s;
+
+.site-access_address {
+	color: #000;
 }
-#access .btn:hover {
-  background-color: #050507;
+
+.site-access_info {
+	color: #000;
+	margin-top: 8px;
+	display: flex;
+	justify-content: center;
+	gap: 0 18px;
 }
 
 /*-------------------------------------------
