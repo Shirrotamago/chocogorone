@@ -225,9 +225,6 @@ about
 	height: 800px;
 	padding: 0 80px;
 	background-color: #E54328;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	background-image:
 	url("../img/About_decoration.png"),
 /*	url("/img/About_decoration.png"),*/
@@ -250,7 +247,7 @@ about
 
 .site-about_title {
 	font-size: 53px;
-	margin-top: 121px;
+	padding-top: 91px;
 	color: #008080;
 }
 
@@ -265,24 +262,52 @@ about
 /*-------------------------------------------
 Information
 -------------------------------------------*/
-#information {
-  margin-bottom: 140px;
+.site-info {
+	width: 100%;
+	height: 800px;
+	padding: 0 80px;
+	background-color: #E54328;
+	background-image:
+	url("/img/About_decoration.png"),
+  repeating-linear-gradient(
+    90deg,
+    rgba(0,128,128,0.5) ,
+    rgba(0,128,128,0.5) 1px,
+    transparent 1px,
+    transparent 12px
+  ),
+  repeating-linear-gradient(
+    0deg,
+    rgba(0,128,128,0.5) ,
+    rgba(0,128,128,0.5) 1px,
+    #E54328 1px,
+    #E54328 12px
+  );
+	background-position: center;
 }
-#information .info-date-en {
-  display: block;
-  font-size: 1.5rem;
+
+.site-info_title {
+	font-size: 53px;
+	padding-top: 91px;
+	color: #008080;
 }
-#information .info-time-en {
-  display: block;
-  font-size: 1.125rem;
+
+.site-info_date {
+	margin-top: 102px;
+	font-size: 26px;
+	color: #000;
 }
-#information .info-place {
-  font-size: 2.5rem;
-  font-weight: 400;
-  margin: 20px 0;
+
+.site-info_sub-title {
+	font-size: 36px;
+	color: #000;
 }
-#information .info-date-ja {
-  font-size: 1.125rem;
+
+.site-info_text {
+	font-size: 24px;
+	color: #000;
+	line-height: 2;
+	margin-top: 10px;
 }
 
 /*-------------------------------------------
