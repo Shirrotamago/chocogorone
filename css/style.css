@@ -436,7 +436,8 @@ Contact
 /*
 Button Arrow
 */
-/* #contact .btn::before,
+/*
+ #contact .btn::before,
 #contact .btn::after {
   content: '';
   position: absolute;
@@ -460,16 +461,14 @@ Button Arrow
 #contact .btn:hover::before,
 #contact .btn:hover::after {
   right: -50px;
-<<<<<<< HEAD
 }
+*/
 
-
-/* pagetop */
-#pagetop{
-    position:fixed;
-    right:40px;
-    bottom:40px;
-    cursor:pointer;
-    z-index: 10;
+#pageup p {
+width: 108px;
+height: 223px;
+position: fixed;
+right: 40px;
+bottom: 40px;
+cursor: pointer;
 }
-
