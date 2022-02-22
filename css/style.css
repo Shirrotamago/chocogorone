@@ -429,6 +429,11 @@ Contact
 	color: #E54328;
 }
 
+.site-contact_btn:hover {
+	background-color: #E54328;
+	color: #000;
+}
+
 .copy {
 	margin-top: 148px;
 	color: #E54328;
