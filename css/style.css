@@ -54,10 +54,12 @@ Global navigation
 -------------------------------------------*/
 /*以下ドロワーメニュー*/
 
-
-
 .gnav {
-background-color: red;
+background-color: black;
+background-image:radial-gradient(#e54328 4%, transparent 4%), radial-gradient(#e54328 4%, transparent 4%);
+background-size: 16px 16px;
+background-repeat: repeat;
+background-position: 0 0 ,8px 8px;
 position: fixed;
 left: 0;
 top: -100%;
@@ -68,30 +70,51 @@ padding: 20px;
 border: solid 12px white;
 overflow: auto;
 transition: all .4s ease;
+z-index: 50;
 }
 
 .gnav.show {
 top: 0;
 }
 
-.gnav ul { margin-top: 60px; }
+.gnav ul {
+margin-top: 60px;
+position: relative;
+}
 .gnav ul li { margin-top: 30px; }
 .gnav ul li a {
+font-family: 'Kiwi Maru', serif;
 display: block;
-background-color: black;
 text-align: center;
 color: #008080;
 text-decoration: none;
 font-size: 150%;
 padding: 15px 10px;
-width: 20%;
+width: 200px;
 margin: 0 auto;
 }
 
-.gnav_deco {
-top: auto;
-bottom: 0;
+.gnav ul li a:hover {
+color: #e54328;
 }
+
+
+.gnav_deco {
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 30;
+}
+
+.gnav_footer {
+position: absolute;
+bottom: 0;
+height: 64px;
+width: 100%;
+background-color: black;
+}
+
 /*ここまで*/
 
 
@@ -149,7 +172,7 @@ right: 80px;
 top: 40px;
 width: 48px;
 height: 48px;
-background-color: white;
+background-color: #e54328;
 position: fixed;
 z-index: 100;
 }
@@ -158,7 +181,7 @@ z-index: 100;
 display: block;
 width: 36px;
 height: 2px;
-background-color: #008080;
+background-color: #fff;
 position: absolute;
 left: 50%;
 transform: translate(-50%, -50%);
@@ -175,10 +198,10 @@ transition: all .5s ease;
 
 
 #mainvisual .slider {
-bottom: 0;
+  bottom: 0;
   max-width: 410;
 	margin: 0 auto;
-	padding-top: 40px;
+	padding-top: 5%;
 }
 
 #mainvisual .slider li img {
@@ -268,7 +291,7 @@ Information
 	padding: 0 80px;
 	background-color: #E54328;
 	background-image:
-	url("/img/About_decoration.png"),
+	url("../img/Infomation_decoration.png"),
   repeating-linear-gradient(
     90deg,
     rgba(0,128,128,0.5) ,
