@@ -16,6 +16,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&family=Klee+One&display=swap" rel="stylesheet">
 <link href="slick/slick.css" rel="stylesheet" type="text/css">
 <link href="slick/slick-theme.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/smoothScroll.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="js/drawer.js"></script>
   </head>
@@ -23,11 +24,25 @@
   <body>
     <div class="container">
       <main>
+			
+        <!--Global navigation-->
+			<nav class="gnav">
+			<ul>
+			<li><a href="#cont1">ABOUT</a></li>
+			<li><a href="#cont2">INFORMATION</a></li>
+			<li><a href="#cont3">ACCESS</a></li>
+			<li><a href="#cont4">CONTACT</a></li>
+			</ul>
+			<div class="gnav_deco"><img src="img/mogura_shihainin.png" alt=""/></div>
+			</nav>
+			
+			
+			
         <!-- Mainvisual -->
         <div id="mainvisual">
 				<p class="main_tit"><img src="img/main-tit.png" alt=""/></p>
 				<p class="main_date"><img src="img/main-date.png" alt=""/></p>
-				<p class="hamburger"><img src="img/hmb_open.svg" width="60px" height="60px" alt=""/></p>
+				<p class="hamburger"><span></span><span></span><span></span></p>
 				<div class="sab_tit"></div>
           <ul class="slider">
 					<li><div class="btn"><a href="#"><img src="img/1snowdrop_dark.png" alt=""/><img src="img/1snowdrop_light.png" alt=""/></a></div></li>

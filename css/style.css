@@ -50,6 +50,52 @@ font-family: 'Kiwi Maru', serif;
 }
 
 /*-------------------------------------------
+Global navigation
+-------------------------------------------*/
+/*以下ドロワーメニュー*/
+
+
+
+.gnav {
+background-color: red;
+position: fixed;
+left: 0;
+/*top: -100%;*/
+width: 100%;
+height: 100%;
+box-sizing: border-box;
+padding: 20px;
+border: solid 12px white;
+overflow: auto;
+transition: all .4s ease;
+}
+
+.gnav.show {
+top: 0;
+}
+
+.gnav ul { margin-top: 60px; }
+.gnav ul li { margin-top: 30px; }
+.gnav ul li a {
+display: block;
+background-color: black;
+text-align: center;
+color: #008080;
+text-decoration: none;
+font-size: 150%;
+padding: 15px 10px;
+width: 20%;
+margin: 0 auto;
+}
+
+.gnav_deco {
+top: auto;
+bottom: 0;
+}
+/*ここまで*/
+
+
+/*-------------------------------------------
 Mainvisual
 -------------------------------------------*/
 
@@ -98,12 +144,34 @@ background-image: url("../img/subtit_light.png");
 background-image: url("../img/subtit_dark.png");
 }
 
-
 #mainvisual .hamburger {
-position: absolute;
 right: 80px;
 top: 40px;
+width: 48px;
+height: 48px;
+background-color: white;
+position: fixed;
+z-index: 100;
 }
+
+#mainvisual .hamburger span {
+display: block;
+width: 36px;
+height: 2px;
+background-color: #008080;
+position: absolute;
+left: 50%;
+transform: translate(-50%, -50%);
+transition: all .5s ease;
+}
+
+#mainvisual .hamburger span:first-child { top: 30%; }
+#mainvisual .hamburger span:nth-child(2) { top: 50%; }
+#mainvisual .hamburger span:last-child { top: 70%; }
+
+#mainvisual .hamburger.close span:first-child { top: 50%; transform: translate(-50%, -50%) rotate(45deg);}
+#mainvisual .hamburger.close span:nth-child(2) { transform: translate(-50%, -50%) rotate(405deg); opacity: 0;}
+#mainvisual .hamburger.close span:last-child { top: 50%; transform: translate(-50%, -50%) rotate(-45deg);}
 
 
 #mainvisual .slider {
