@@ -80,8 +80,7 @@ background-image: url("../img/subtit_light.png");
 background-image: url("../img/subtit_dark.png");
 }
 
-<<<<<<< HEAD
-=======
+
 #mainvisual .hamburger {
 position: absolute;
 right: 80px;
@@ -89,7 +88,6 @@ top: 40px;
 }
 
 
->>>>>>> shirota
 #mainvisual .slider {
   max-width: 410;
 	margin: 0 auto;
