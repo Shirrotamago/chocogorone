@@ -123,7 +123,7 @@ Mainvisual
 
 #mainvisual {
 background:
-url("img/grass_deco.svg") left bottom / 80px auto repeat-x,
+url("/img/grass_deco.svg") left bottom / 80px auto repeat-x,
 
   repeating-linear-gradient(
     90deg,
