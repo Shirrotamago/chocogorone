@@ -460,11 +460,12 @@ footer {
 	color: #E54328;
 }
 
-#pageup p {
+#pageup {
 width: 108px;
 height: 223px;
 position: fixed;
 right: 40px;
 bottom: 40px;
 cursor: pointer;
+ z-index: 10;
 }
