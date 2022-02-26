@@ -114,14 +114,14 @@
     </div>
 
     
-<div id="pageup"><p><img src="img/page_up.png" alt=""/></p></div>
+<div id="pageup" hidden><img src="img/page_up.png" alt=""/></div>
 
 <!--slick（スライドショーアニメーション）-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script type="text/javascript" src="js/smoothScroll.js"></script>
 <script type="text/javascript" src="js/drawer.js"></script>
-<script type="text/javascript" src="js/pageup.js"></script>
+<!--<script type="text/javascript" src="js/pageup.js"></script>-->
     
 
 <script>
@@ -153,6 +153,36 @@ $('.slider').slick({
 
 });
 </script>
+    
+<!-- スクロール用 -->
+<script>
+$(function(){
+  var topBtn=$('#pageup');
+  topBtn.hide();
+ 
+  //ボタンの表示設定
+  $(window).scroll(function(){
+    if($(this).scrollTop()>800){
+      //---- 画面を800pxスクロールしたら、ボタンを表示する
+      topBtn.fadeIn();
+    }else{
+      //---- 画面が800pxより上なら、ボタンを表示しない
+      topBtn.fadeOut();
+    } 
+  }); 
+});
+  </script>
+<script>
+$(function(){
+    var topBtn=$('#pageup');
+//  ボタンをクリックしたら、スクロールして上に戻る
+  topBtn.click(function(){
+    $('body,html').animate({
+    scrollTop: 0},500);
+    return false;
+  });
+});
+  </script>
 
   </body>
 </html>
